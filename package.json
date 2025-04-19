@@ -1,0 +1,43 @@
+{
+  "name": "6month8thlesson",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "nodemon src/server.ts",
+    "dev": "nodemon --exec \"ts-node\" ./src/server.ts",
+    "lint": "eslint 'src/**/*.ts'",
+    "seed:init": "ts-node ./src/seeds/init.ts",
+    "postinstall": "npm run typings",
+    "typings": "typings install"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/express": "^5.0.1",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.14.1",
+    "@types/pg": "^8.11.13",
+    "dotenv": "^16.5.0",
+    "eslint": "^9.24.0",
+    "express": "^5.1.0",
+    "install": "^0.13.0",
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.9",
+    "npm": "^11.3.0",
+    "ts-jest": "^29.3.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@types/swagger-jsdoc": "^6.0.4",
+    "@types/swagger-ui": "^3.52.4",
+    "@types/swagger-ui-express": "^4.1.8",
+    "joi": "^17.13.3",
+    "pg": "^8.14.1",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
+  }
+}
